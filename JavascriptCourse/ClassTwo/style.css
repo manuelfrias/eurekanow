@@ -1,0 +1,11 @@
+body {
+    font-family: "helveticaneue Light";
+    color: #666;
+    padding: 0 20%;
+}
+img {
+  width: 200px;
+}
+.hide {
+  display: none;
+}

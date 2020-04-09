@@ -1,0 +1,25 @@
+body {
+    font-family: "helveticaneue";
+    color: #666;
+    padding: 0 20%;
+}
+h3{
+    font-size: 30px;
+    color: rgb(62, 94, 182);
+}
+input{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+p{
+    font-size: 28px;
+}
+img {
+  width: 200px;
+}
+.hide {
+  display: none;
+}
