@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso de gastos</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+<header>
+    <div class="titulo">
+        <h3>Registro de gastos</h3>
+    </div>
+</header>
+<form id="form-id" method="post" action="register.php">
+
+    <div class="formelement" id="typeofcharge">
+        <div class="labels">Expense category</div>
+        <select id="typeofcharge-id" name="typeofcharge-name">
+            <option value="1">Comida</option>
+            <option value="2">Casa</option>
+            <option value="3">Loki & Nala</option>
+            <option value="4">Transporte</option>
+        </select>
+    </div>
+
+    <div class="formelement" id="methodofpayment">
+        <div class="labels">Payment method</div>
+        <select id="methodofpayment-id" name="methodofpayment-name">
+            <option value="1">Cash</option>
+            <option value="2">BBVA Plat</option>
+            <option value="3">Diners</option>
+            <option value="4">BCP Debit</option>
+        </select>
+    </div>
+
+    <div class="formelement" id="amount">
+        <div class="labels">Amount</div>
+        <input type="number" placeholder="10.00" step="0.01" input id="amount-id"  name="amount-name">
+    </div>
+
+    <div class="formelement" id="currency">
+        <div  class="labels" >Currency</div>
+        <div class="radios"><div class="radio"><input type="radio" id="soles" name="currency-name" value="PEN">
+        <label for="soles">Soles</label></div>
+        <div class="radio"><input type="radio" id="dollars" name="currency-name" value="USD">
+        <label for="dollars">Dolares</label></div></div>
+    </div>
+
+    <div class="formelement" id="date">
+        <div class="labels">Date of transaction</div>
+        <input type="date" id="date-id" name="date-name" value="2020-07-22" min="2020-01-01" max="2020-12-31">        
+    </div>
+
+    <div class="formelement" id="submit_buttom">
+        <input type="submit" value="Submit">
+    </div>
+
+</form>
+</body>
+</html>
